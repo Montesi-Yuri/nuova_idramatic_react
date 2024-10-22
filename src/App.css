@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+	--text: #0c0b03;
+	--background: #fefdfb;
+	--primary: #c9a74a;
+	--secondary: #91c4de;
+	--accent: #f4ce43;
+}
+
+.text-primary{
+  color: var(--primary);
+}
+
+.text-secondary{
+  color: var(--secondary);
+}
+
+.text-accent{
+  color: var(--accent);
+}
+
+.bg-primary{
+  background-color: var(--primary);
+}
+
+.bg-secondary{
+  background-color: var(--secondary);
+}
+
+.bg-accent{
+  background-color: var(--accent);
+}
+
+
+.bg-custom {
+	background-image: url('https://images.unsplash.com/photo-1705837863332-7162639852d8?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+	background-size: cover;
+	background-position: center;
+}
