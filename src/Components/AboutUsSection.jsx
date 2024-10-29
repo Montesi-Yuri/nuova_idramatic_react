@@ -1,5 +1,4 @@
 import CountUp from 'react-countup';
-import { FaLandmark } from 'react-icons/fa';
 
 export default function AboutUsSection() {
     return (
@@ -58,67 +57,67 @@ export default function AboutUsSection() {
             </section>
 
 
-            <section class="bg-neutral-700 bg-opacity-70">
-                <div class="py-8 px-4 lg:mx-auto max-w-7xl lg:py-16 text-start">
-                    <div class="mx-auto mb-8 lg:mb-16">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black">Il nostro team</h2>
-                        <h4 class="font-light text-gray-300 lg:mb-16 text-xl">
+            <section className="bg-neutral-700 bg-opacity-70">
+                <div className="py-8 px-4 lg:mx-auto max-w-7xl lg:py-16 text-start">
+                    <div className="mx-auto mb-8 lg:mb-16">
+                        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-black">Il nostro team</h2>
+                        <h4 className="font-light text-gray-300 lg:mb-16 text-xl">
                             Scopri il nostro team di meccanici esperti, pronti a risolvere ogni problema con professionalità e competenza.
                         </h4>
                     </div>
-                    <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-                        <div class="items-start bg-gray-100 rounded-lg shadow sm:flex">
-                            <a href="#">
-                                <img class="w-full md:mt-5 rounded-lg sm:rounded-none sm:rounded-l-lg md:rounded-full md:ms-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
+                    <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+                        <div className="items-start bg-gray-100 rounded-lg shadow sm:flex">
+                            <a href="#!">
+                                <img className="w-full md:mt-5 rounded-lg sm:rounded-none sm:rounded-l-lg md:rounded-full md:ms-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
                             </a>
-                            <div class="p-5">
-                                <h3 class="text-2xl font-bold tracking-tight text-black">
-                                    <a href="#">Bonnie Green</a>
+                            <div className="p-5">
+                                <h3 className="text-2xl font-bold tracking-tight text-black">
+                                    <a href="#!">Bonnie Green</a>
                                 </h3>
-                                <span class="text-blue-500 font-semibold">Responsabile Officina</span>
-                                <p class="mt-3 mb-4 font-light text-gray-500 text-lg">
+                                <span className="text-blue-500 font-semibold">Responsabile Officina</span>
+                                <p className="mt-3 mb-4 font-light text-gray-500 text-lg">
                                     Bonnie coordina il team e garantisce che ogni intervento di riparazione e manutenzione venga eseguito con la massima precisione.
                                 </p>
                             </div>
                         </div>
-                        <div class="items-start bg-gray-100 rounded-lg shadow sm:flex">
-                            <a href="#">
-                                <img class="md:mt-5 w-full rounded-lg sm:rounded-none sm:rounded-l-lg md:rounded-full md:ms-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Avatar" />
+                        <div className="items-start bg-gray-100 rounded-lg shadow sm:flex">
+                            <a href="#!">
+                                <img className="md:mt-5 w-full rounded-lg sm:rounded-none sm:rounded-l-lg md:rounded-full md:ms-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Avatar" />
                             </a>
-                            <div class="p-5">
-                                <h3 class="text-2xl font-bold tracking-tight text-black">
-                                    <a href="#">Jese Leos</a>
+                            <div className="p-5">
+                                <h3 className="text-2xl font-bold tracking-tight text-black">
+                                    <a href="#!">Jese Leos</a>
                                 </h3>
-                                <span class="text-blue-500 font-semibold">Tecnico Senior</span>
-                                <p class="mt-3 mb-4 font-light text-gray-500 text-lg">
+                                <span className="text-blue-500 font-semibold">Tecnico Senior</span>
+                                <p className="mt-3 mb-4 font-light text-gray-500 text-lg">
                                     Jese è specializzato nella diagnosi e risoluzione dei guasti più complessi, con anni di esperienza nel settore della meccanica pesante.
                                 </p>
                             </div>
                         </div>
-                        <div class="items-start bg-gray-100 rounded-lg shadow sm:flex">
-                            <a href="#">
-                                <img class="md:mt-5 w-full rounded-lg sm:rounded-none sm:rounded-l-lg md:rounded-full md:ms-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
+                        <div className="items-start bg-gray-100 rounded-lg shadow sm:flex">
+                            <a href="#!">
+                                <img className="md:mt-5 w-full rounded-lg sm:rounded-none sm:rounded-l-lg md:rounded-full md:ms-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
                             </a>
-                            <div class="p-5">
-                                <h3 class="text-2xl font-bold tracking-tight text-black">
-                                    <a href="#">Michael Gough</a>
+                            <div className="p-5">
+                                <h3 className="text-2xl font-bold tracking-tight text-black">
+                                    <a href="#!">Michael Gough</a>
                                 </h3>
-                                <span class="text-blue-500 font-semibold">Esperto in Manutenzione</span>
-                                <p class="mt-3 mb-4 font-light text-gray-500 text-lg">
+                                <span className="text-blue-500 font-semibold">Esperto in Manutenzione</span>
+                                <p className="mt-3 mb-4 font-light text-gray-500 text-lg">
                                     Michael si occupa di manutenzione preventiva e di routine, assicurando che i veicoli siano sempre in perfette condizioni.
                                 </p>
                             </div>
                         </div>
-                        <div class="items-start bg-gray-100 rounded-lg shadow sm:flex">
-                            <a href="#">
-                                <img class="md:mt-5 w-full rounded-lg sm:rounded-none sm:rounded-l-lg md:rounded-full md:ms-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png" alt="Thomas Avatar" />
+                        <div className="items-start bg-gray-100 rounded-lg shadow sm:flex">
+                            <a href="#!">
+                                <img className="md:mt-5 w-full rounded-lg sm:rounded-none sm:rounded-l-lg md:rounded-full md:ms-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png" alt="Thomas Avatar" />
                             </a>
-                            <div class="p-5">
-                                <h3 class="text-2xl font-bold tracking-tight text-black">
-                                    <a href="#">Thomas Lean</a>
+                            <div className="p-5">
+                                <h3 className="text-2xl font-bold tracking-tight text-black">
+                                    <a href="#!">Thomas Lean</a>
                                 </h3>
-                                <span class="text-blue-500 font-semibold">Specialista in Diagnostica Elettronica</span>
-                                <p class="mt-3 mb-4 font-light text-gray-500 text-lg">
+                                <span className="text-blue-500 font-semibold">Specialista in Diagnostica Elettronica</span>
+                                <p className="mt-3 mb-4 font-light text-gray-500 text-lg">
                                     Thomas è esperto nell'analisi e nella riparazione dei sistemi elettronici dei veicoli, assicurando che tutte le componenti siano perfettamente calibrate.
                                 </p>
                             </div>

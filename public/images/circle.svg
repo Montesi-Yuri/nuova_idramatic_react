@@ -1,0 +1,11 @@
+<svg viewBox="0 0 500 250">
+   <circle
+      fill="purple"
+      stroke="blue"
+      stroke-width="15"
+      fill-opacity=".5"
+      cx="250" 
+      cy="125" 
+      r="120"
+   />
+</svg>

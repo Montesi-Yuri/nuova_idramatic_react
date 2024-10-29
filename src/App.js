@@ -7,17 +7,20 @@ import AboutUsSection from './Components/AboutUsSection';
 import CtaSection from './Components/CtaSection';
 
 function App() {
+
 	return (
 		<div className="App">
-			<div className='bg-neutral-200 bg-custom py-1'>
-				<Header />
-				<main className='mx-auto'>
-					<HeroSection />
-					<ServiceSection />
-					<AboutUsSection />
-					<CtaSection />
-				</main>
-				<Footer />
+			<div className='bg-gradient relative  py-1'>
+				<div className='grid-background'>
+					<Header />
+					<main className='mx-auto relative'>
+						<HeroSection />
+						<ServiceSection />
+						<AboutUsSection />
+						<CtaSection />
+					</main>
+					<Footer />
+				</div>
 			</div>
 		</div>
 	);

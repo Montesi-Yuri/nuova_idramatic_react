@@ -1,0 +1,9 @@
+# Abilita il motore di riscrittura URL
+RewriteEngine On
+
+# Se la richiesta non è già per la cartella /build
+RewriteCond %{REQUEST_URI} !^/build
+
+# Reindirizza tutto il traffico alla cartella /build
+RewriteRule ^(.*)$ /build/$1 [L]
+
