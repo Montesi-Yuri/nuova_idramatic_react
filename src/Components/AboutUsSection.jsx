@@ -66,59 +66,116 @@ export default function AboutUsSection() {
                         </h4>
                     </div>
                     <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-                        <div className="items-start bg-gray-100 rounded-lg shadow sm:flex">
-                            <a href="#!">
-                                <img className="w-full md:mt-5 rounded-lg sm:rounded-none sm:rounded-l-lg md:rounded-full md:ms-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
-                            </a>
-                            <div className="p-5">
+                        <div className="bg-gray-100 rounded-lg shadow overflow-hidden flex flex-col sm:flex-row h-full">
+                            <div className="sm:w-1/3 h-64 sm:h-auto relative">
+                                <img 
+                                    className="absolute w-full h-full object-cover" 
+                                    src="https://placehold.co/400x400" 
+                                    alt="Marco Montesi" 
+                                />
+                            </div>
+                            <div className="p-5 sm:w-2/3">
                                 <h3 className="text-2xl font-bold tracking-tight text-black">
-                                    <a href="#!">Bonnie Green</a>
+                                    Marco Montesi
                                 </h3>
-                                <span className="text-blue-500 font-semibold">Responsabile Officina</span>
+                                <span className="text-blue-500 font-semibold">Responsabile Tecnico Senior</span>
                                 <p className="mt-3 mb-4 font-light text-gray-500 text-lg">
-                                    Bonnie coordina il team e garantisce che ogni intervento di riparazione e manutenzione venga eseguito con la massima precisione.
+                                    Coordina il team tecnico e supervisiona tutti gli interventi, garantendo gli standard qualitativi più elevati.
                                 </p>
                             </div>
                         </div>
-                        <div className="items-start bg-gray-100 rounded-lg shadow sm:flex">
-                            <a href="#!">
-                                <img className="md:mt-5 w-full rounded-lg sm:rounded-none sm:rounded-l-lg md:rounded-full md:ms-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Avatar" />
-                            </a>
-                            <div className="p-5">
+
+                        <div className="bg-gray-100 rounded-lg shadow overflow-hidden flex flex-col sm:flex-row h-full">
+                            <div className="sm:w-1/3 h-64 sm:h-auto relative">
+                                <img 
+                                    className="absolute w-full h-full object-cover" 
+                                    src="https://placehold.co/400x400" 
+                                    alt="Claudia Ciaffoni" 
+                                />
+                            </div>
+                            <div className="p-5 sm:w-2/3">
                                 <h3 className="text-2xl font-bold tracking-tight text-black">
-                                    <a href="#!">Jese Leos</a>
+                                    Claudia Ciaffoni
                                 </h3>
-                                <span className="text-blue-500 font-semibold">Tecnico Senior</span>
+                                <span className="text-blue-500 font-semibold">Amministrazione</span>
                                 <p className="mt-3 mb-4 font-light text-gray-500 text-lg">
-                                    Jese è specializzato nella diagnosi e risoluzione dei guasti più complessi, con anni di esperienza nel settore della meccanica pesante.
+                                    Gestisce le attività amministrative e il coordinamento operativo dell'officina.
                                 </p>
                             </div>
                         </div>
-                        <div className="items-start bg-gray-100 rounded-lg shadow sm:flex">
-                            <a href="#!">
-                                <img className="md:mt-5 w-full rounded-lg sm:rounded-none sm:rounded-l-lg md:rounded-full md:ms-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Avatar" />
-                            </a>
-                            <div className="p-5">
+
+                        <div className="bg-gray-100 rounded-lg shadow overflow-hidden flex flex-col sm:flex-row h-full">
+                            <div className="sm:w-1/3 h-64 sm:h-auto relative">
+                                <img 
+                                    className="absolute w-full h-full object-cover" 
+                                    src="https://placehold.co/400x400" 
+                                    alt="Alessia Montesi" 
+                                />
+                            </div>
+                            <div className="p-5 sm:w-2/3">
                                 <h3 className="text-2xl font-bold tracking-tight text-black">
-                                    <a href="#!">Michael Gough</a>
+                                    Alessia Montesi
                                 </h3>
-                                <span className="text-blue-500 font-semibold">Esperto in Manutenzione</span>
+                                <span className="text-blue-500 font-semibold">Amministrazione</span>
                                 <p className="mt-3 mb-4 font-light text-gray-500 text-lg">
-                                    Michael si occupa di manutenzione preventiva e di routine, assicurando che i veicoli siano sempre in perfette condizioni.
+                                    Collabora nella gestione amministrativa dell'azienda, occupandosi di contabilità e supporto operativo.
                                 </p>
                             </div>
                         </div>
-                        <div className="items-start bg-gray-100 rounded-lg shadow sm:flex">
-                            <a href="#!">
-                                <img className="md:mt-5 w-full rounded-lg sm:rounded-none sm:rounded-l-lg md:rounded-full md:ms-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png" alt="Thomas Avatar" />
-                            </a>
-                            <div className="p-5">
+
+                        <div className="bg-gray-100 rounded-lg shadow overflow-hidden flex flex-col sm:flex-row h-full">
+                            <div className="sm:w-1/3 h-64 sm:h-auto relative">
+                                <img 
+                                    className="absolute w-full h-full object-cover" 
+                                    src="https://placehold.co/400x400" 
+                                    alt="Nicholas Spugni" 
+                                />
+                            </div>
+                            <div className="p-5 sm:w-2/3">
                                 <h3 className="text-2xl font-bold tracking-tight text-black">
-                                    <a href="#!">Thomas Lean</a>
+                                    Nicholas Spugni
                                 </h3>
-                                <span className="text-blue-500 font-semibold">Specialista in Diagnostica Elettronica</span>
+                                <span className="text-blue-500 font-semibold">Tecnico</span>
                                 <p className="mt-3 mb-4 font-light text-gray-500 text-lg">
-                                    Thomas è esperto nell'analisi e nella riparazione dei sistemi elettronici dei veicoli, assicurando che tutte le componenti siano perfettamente calibrate.
+                                    Specializzato nella diagnosi e riparazione di sistemi meccanici e idraulici.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="bg-gray-100 rounded-lg shadow overflow-hidden flex flex-col sm:flex-row h-full">
+                            <div className="sm:w-1/3 h-64 sm:h-auto relative">
+                                <img 
+                                    className="absolute w-full h-full object-cover" 
+                                    src="https://placehold.co/400x400" 
+                                    alt="Matteo Meloni" 
+                                />
+                            </div>
+                            <div className="p-5 sm:w-2/3">
+                                <h3 className="text-2xl font-bold tracking-tight text-black">
+                                    Matteo Meloni
+                                </h3>
+                                <span className="text-blue-500 font-semibold">Tecnico</span>
+                                <p className="mt-3 mb-4 font-light text-gray-500 text-lg">
+                                    Esperto in manutenzione e riparazione di veicoli industriali.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="bg-gray-100 rounded-lg shadow overflow-hidden flex flex-col sm:flex-row h-full">
+                            <div className="sm:w-1/3 h-64 sm:h-auto relative">
+                                <img 
+                                    className="absolute w-full h-full object-cover" 
+                                    src="https://placehold.co/400x400" 
+                                    alt="Nicola Rocchetti" 
+                                />
+                            </div>
+                            <div className="p-5 sm:w-2/3">
+                                <h3 className="text-2xl font-bold tracking-tight text-black">
+                                    Nicola Rocchetti
+                                </h3>
+                                <span className="text-blue-500 font-semibold">Tecnico</span>
+                                <p className="mt-3 mb-4 font-light text-gray-500 text-lg">
+                                    Specializzato in interventi tecnici e manutenzione sul campo.
                                 </p>
                             </div>
                         </div>
