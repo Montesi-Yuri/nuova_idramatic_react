@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 export default function AboutUsSection() {
     return (
         <>
-            <section className="my-8 px-4 py-8 mx-auto lg:py-16 lg:px-6 text-gray-800 animate-fadeScaleOutIn ">
+            <section id='aboutUs' className="my-8 px-4 py-8 mx-auto lg:py-16 lg:px-6 text-gray-800 slide-in-fwd-center ">
                 <div className='mb-16 max-w-7xl mx-auto flex flex-wrap lg:flex-nowrap items-center'>
                     <div className="w-full lg:w-3/5 text-start">
                         <h2 className="text-4xl font-bold mb-4 text-black flex flex-wrap items-center gap-2">
@@ -57,7 +57,7 @@ export default function AboutUsSection() {
             </section>
 
 
-            <section className="bg-neutral-700 bg-opacity-70">
+            <section className="bg-black bg-opacity-30">
                 <div className="py-8 px-4 lg:mx-auto max-w-7xl lg:py-16 text-start">
                     <div className="mx-auto mb-8 lg:mb-16">
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-black">Il nostro team</h2>

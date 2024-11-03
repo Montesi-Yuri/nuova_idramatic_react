@@ -4,7 +4,8 @@ import Footer from './Components/Footer';
 import HeroSection from './Components/HeroSection';
 import ServiceSection from './Components/ServiceSection';
 import AboutUsSection from './Components/AboutUsSection';
-import CtaSection from './Components/CtaSection';
+import ContactSection from './Components/ContactSection';
+import PartnersSection from './Components/PartnersSection';
 
 function App() {
 
@@ -16,8 +17,9 @@ function App() {
 					<main className='mx-auto relative'>
 						<HeroSection />
 						<ServiceSection />
+						<PartnersSection />
 						<AboutUsSection />
-						<CtaSection />
+						<ContactSection />
 					</main>
 					<Footer />
 				</div>

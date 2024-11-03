@@ -1,37 +1,62 @@
 import { useState } from 'react';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaHome, FaServicestack, FaMonument, FaPhoneAlt } from 'react-icons/fa';
 import Logo from './Logo';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
+    const scrollToElement = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            const scrollOffset = 200; // Adjust this value according to your needs
+            const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+            const scrollPosition = elementPosition - scrollOffset;
+            window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+            // console.log('scrolling to:', id, 'position:', scrollPosition);
+        }
+    };
+
     return (
-        <header className=" bg-gray-100 text-text lg:sticky top-1 relative z-10 border-gray-600 border-2 rounded-lg animate-fadeScaleOutIn max-w-7xl mx-1 xl:mx-auto ">
+        <header className=" bg-gray-100 text-text lg:sticky top-1 relative z-10 border-gray-600 border-2 rounded-lg slide-in-elliptic-top-fwd max-w-7xl mx-1 xl:mx-auto ">
             <nav className="mx-auto h-auto w-full max-w-screen-2xl lg:relative lg:top-0">
                 <div className="flex flex-col px-6 py-6 lg:flex-row lg:items-center lg:justify-between lg:py-4 xl:px-8">
                     <a href="#!" className='text-text '>
                         <Logo classes={'h-26'} />
                     </a>
-                    <div className='flex flex-wrap gap-6'>
+                    <div className='flex flex-wrap gap-2 md:gap-6'>
                         <div
-                            className={`mt-14 flex flex-col space-y-8 lg:flex-grow lg:mt-0 lg:flex lg:flex-row lg:space-x-1 lg:space-y-0 ${isOpen ? "" : "hidden"}`}
+                            className={`mt-14 flex flex-col space-y-8 w-full lg:w-auto lg:flex-grow lg:mt-0 lg:flex lg:flex-row lg:space-x-1 lg:space-y-0 ${isOpen ? "" : "hidden"}`}
                         >
                             <a
                                 href="#!"
-                                className="text-text text-lg rounded-lg lg:px-6 lg:py-4 lg:hover:scale-110 lg:hover:underline"
+                                className="text-text text-lg rounded-lg lg:px-6 lg:py-4 lg:hover:scale-110 lg:hover:underline transition-all duration-400 flex items-center gap-2"
+                                onClick={() => scrollToElement('home')}
                             >
+                                <FaHome className='w-4 h-4 text-gray-900' />
                                 Home
                             </a>
                             <a
                                 href="#!"
-                                className="text-text text-lg rounded-lg lg:px-6 lg:py-4 lg:hover:scale-110 lg:hover:underline"
+                                className="text-text text-lg rounded-lg lg:px-6 lg:py-4 lg:hover:scale-110 lg:hover:underline transition-all duration-400 flex items-center gap-2"
+                                onClick={() => scrollToElement('services')}
                             >
+                                <FaServicestack className='w-4 h-4 text-gray-900' />
                                 Servizi
                             </a>
                             <a
                                 href="#!"
-                                className="text-text text-lg rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:scale-110 lg:hover:underline"
+                                className="text-text text-lg rounded-lg lg:px-6 lg:py-4 lg:hover:scale-110 lg:hover:underline transition-all duration-400 flex items-center gap-2"
+                                onClick={() => scrollToElement('aboutUs')}
                             >
+                                <FaMonument className='w-4 h-4 text-gray-900' />
+                                Chi siamo
+                            </a>
+                            <a
+                                href="#!"
+                                className="text-text text-lg rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:scale-110 lg:hover:underline transition-all duration-400 flex items-center gap-2"
+                                onClick={() => scrollToElement('contacts')}
+                            >
+                                <FaPhoneAlt className='w-4 h-4 text-gray-900' />
                                 Contatti
                             </a>
                         </div>
@@ -47,14 +72,14 @@ export default function Header() {
                         </div>
                     </div>
                     <button
-                        className="absolute top-[24px] bg-gray-200 rounded-md p-1 right-5 lg:hidden"
+                        className="absolute top-[65px] bg-gray-200 rounded-md p-1 right-5 lg:hidden"
                         onClick={() => {
                             setIsOpen(!isOpen);
                         }}
                     >
                         <svg
-                            width="24"
-                            height="24"
+                            width="32"
+                            height="32"
                             viewBox="0 0 24 24"
                             fill="white"
                             xmlns="http://www.w3.org/2000/svg"

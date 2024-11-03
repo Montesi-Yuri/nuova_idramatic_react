@@ -1,7 +1,7 @@
 export default function ServiceSection() {
 	return (
 		<>
-			<section className="px-1 my-8 bg-neutral-700 bg-opacity-70">
+			<section id="services" className=" px-1 my-8 slide-in-fwd-center">
 				<div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
 					<div className="max-w-screen-md mb-6 lg:mb-8">
 						<h2 className="text-4xl tracking-tight font-extrabold text-black animate-fadeInUp">Abbiamo la soluzione per ogni tua esigenza </h2>
@@ -9,7 +9,7 @@ export default function ServiceSection() {
 					<div className=" space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 ">
 
 						<div className='max-w-lg mx-auto shadow-lg p-4 rounded-lg bg-white animate-fadeInUp flex justify-center flex-wrap items-center'>
-							<div className="flex justify-center items-center w-10 h-10 rounded-full lg:h-12 lg:w-12 bg-primary-900 shadow-lg -ms-4 me-2 mb-2">
+							<div className="flex justify-center items-center w-10 h-10 rounded-full lg:h-12 lg:w-12 bg-primary-900 shadow-lg -ms-4 me-2 mb-2</div>">
 								<svg className="w-5 h-5 lg:w-6 lg:h-6 text-accent" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
 							</div>
 							<h3 className="text-xl font-bold text-black mb-2">Manutenzione</h3>

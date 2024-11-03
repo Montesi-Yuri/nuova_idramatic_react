@@ -4,7 +4,7 @@ import Logo from "./Logo";
 export default function Footer() {
     return (
         <>
-            <footer className="p-4 max-w-7xl rounded-lg animate-fadeScaleOutIn mt-6 mx-1 xl:mx-auto sm:p-6 bg-gray-100 text-start shadow-lg relative z-10">
+            <footer className="p-4 max-w-7xl rounded-lg slide-in-fwd-center mt-6 mx-1 xl:mx-auto sm:p-6 bg-gray-100 text-start shadow-lg relative z-10">
                 <div className="mx-auto max-w-screen-xl">
                     <div className="md:flex md:justify-between items-center">
                         <div className="mb-6 md:mb-0">
@@ -48,7 +48,7 @@ export default function Footer() {
                         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com" className="hover:underline">Nuova Idramatic™</a>
                         </span>
                         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-                            <span className="text-gray-400 text-sm">Realizzato da: Y.M logo</span>
+                            <span className="text-gray-400 text-sm">Realizzato da: Y.M.</span>
                         </div>
                     </div>
                 </div>

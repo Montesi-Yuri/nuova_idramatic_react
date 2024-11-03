@@ -1,7 +1,12 @@
-export default function CtaSection() {
+export default function ContactSection() {
+
+    const sendMessage = () => {
+        alert('Funzionalità in fase di sviluppo');
+    }
+
     return (
-        <section className="">
-            <div className="py-8 px-4 mx-auto max-w-7xl sm:py-16 lg:px-6 flex flex-wrap justify-between items-center">
+        <section id="contacts">
+            <div className="py-8 px-4 mx-auto max-w-7xl sm:py-16 lg:px-6 flex flex-wrap justify-between items-center slide-in-fwd-center">
                 <div className="mt-8 max-w-xl mx-auto">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Contattaci</h2>
                     <p className="mb-4 text-gray-700 text-xl">Puoi contattarci tramite email, telefono o compilando il form sottostante:</p>
@@ -9,22 +14,22 @@ export default function CtaSection() {
                         <div className="grid grid-cols-1 gap-6">
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 text-start"><span className="text-red-500">*</span> Nome</label>
-                                <input type="text" name="name" id="name" autoComplete="given-name" className="mt-1 p-2 focus:ring-primary-500 focus:border-primary-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required />
+                                <input type="text" name="name" id="name" autoComplete="given-name" className="mt-1 p-2 focus:ring-primary-500 focus:border-primary-500 block w-full shadow-sm sm:text-sm border-gray-300 text-black rounded-md" required />
                             </div>
                             <div>
                                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 text-start"><span className="text-red-500">*</span> Email</label>
-                                <input type="email" name="email" id="email" autoComplete="email" className="mt-1 p-2 focus:ring-primary-500 focus:border-primary-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required />
+                                <input type="email" name="email" id="email" autoComplete="email" className="mt-1 p-2 focus:ring-primary-500 focus:border-primary-500 block w-full shadow-sm sm:text-sm border-gray-300 text-black rounded-md" required />
                             </div>
                             <div>
                                 <label htmlFor="oggetto" className="block text-sm font-medium text-gray-700 text-start"><span className="text-red-500">*</span> Oggetto</label>
-                                <input type="text" name="oggetto" id="oggetto" className="mt-1 p-2 focus:ring-primary-500 focus:border-primary-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required />
+                                <input type="text" name="oggetto" id="oggetto" className="mt-1 p-2 focus:ring-primary-500 focus:border-primary-500 block w-full shadow-sm sm:text-sm border-gray-300 text-black rounded-md" required />
                             </div>
                             <div>
                                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 text-start"><span className="text-red-500">*</span> Messaggio</label>
                                 <textarea id="message" name="message" rows="4" className="mt-1 focus:ring-primary-500 focus:border-primary-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required></textarea>
                             </div>
                             <div className="flex justify-end">
-                                <button type="button" className="px-4 py-2.5 text-base font-medium text-black bg-accent rounded-lg hover:bg-primary-800 focus:ring-4">
+                                <button type="button" onClick={sendMessage} className="px-4 py-2.5 text-base font-medium text-black bg-accent rounded-lg hover:scale-110 transition-all duration-300 focus:ring-4">
                                     Invia messaggio
                                 </button>
                             </div>

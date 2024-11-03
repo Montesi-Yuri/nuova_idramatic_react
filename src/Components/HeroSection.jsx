@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
 
 // Importa i file CSS di Swiper
 import 'swiper/css';
@@ -9,18 +9,18 @@ import 'swiper/css/scrollbar';
 
 export default function HeroSection() {
     return (
-        <section className='max-w-7xl mx-auto px-1 animate-fadeScaleOutIn mt-2 md:mt-6'>
+        <section className='max-w-7xl mx-auto px-1 slide-in-fwd-center mt-2 md:mt-6'>
             <Swiper
-                modules={[Navigation, Pagination, Scrollbar]}
+                modules={[Navigation, Pagination, Scrollbar, Autoplay]}
                 spaceBetween={0} // Spazio tra le slide
                 slidesPerView={1}  // Numero di slide visibili per volta
-                // navigation       // Attiva frecce di navigazione
+                navigation={window.innerWidth >= 768 ? true : false}      // Attiva frecce di navigazione
                 pagination={{ clickable: true }} // Attiva la paginazione cliccabile
                 loop={true}     // Abilita lo scorrimento continuo
-                autoplay={true} // Abilita l'autoplay con un delay di 5 secondi
+                autoplay={{ delay: 4000, disableOnInteraction: false }}
             >
                 <SwiperSlide>
-                    <div className='flex relative max-h-[500px]'>
+                    <div className='flex relative max-h-[500px] min-[300px]:'>
                         <img className='object-cover h-full relative top-0 start-0 w-full' src="https://content.fordpro.com/content/dam/fordpro/it/images/service/desktop/fordfront-service-1.jpg" alt="Slide 1" loading='lazy' />
                         <div className="absolute h-full w-full opacity-70 bg-black"></div>
                         <div className="text-white absolute z-10 top-0 start-0 w-full h-full p-6 md:p-16" >
